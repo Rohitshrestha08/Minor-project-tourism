@@ -1,0 +1,36 @@
+section .gallery{
+    display: flex;
+    justify-content:center; /* Horizontally center the images */
+    margin-top: 30px;
+    justify-content:flex-start;
+}
+
+.gallery_container {
+    display: flex;
+    justify-content:flex-start; /* Horizontally center the images */
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.images {
+    width: 20%;
+    height: 250px;
+    margin: 10px;
+    display: flex;
+    justify-content: center; /* Horizontally center the image within its container */
+    align-items: center; /* Vertically center the image within its container */
+    border-radius: 10px;
+    overflow: hidden; /* Ensure images don't overflow container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.6); 
+    cursor: pointer;
+}
+
+.images:hover {
+    transform: scale(1.02);
+}
+
+.images img {
+    width: 100%;
+    height: 100%; /* Ensure image fills container */
+    object-fit: cover; /* Scale image while preserving aspect ratio */
+}

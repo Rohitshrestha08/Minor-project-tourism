@@ -1,0 +1,8 @@
+.carousel {
+    position: relative;
+    z-index: 1; /* Set a lower z-index */
+}
+.carousel-inner img{
+    width: 100%;
+    height: 600px;
+}

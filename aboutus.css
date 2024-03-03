@@ -1,0 +1,126 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+section .about{
+    display: flex;
+    margin: 5px 0px;
+    flex-direction: column; /* Arrange children in a column */
+    align-items: center; /* Center items horizontally */
+}
+.about_container {
+    width: 100%;
+    height: 400px;
+    background: url(images/mt.jpg) 50% no-repeat;
+    background-size: auto;
+    overflow: hidden;
+    position: relative;
+}
+.about_container h1 {
+    font-weight: 700;
+    font-size: 68px;
+    margin-top: 10%;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+}
+.about_container p {
+    font-weight: 700;
+    font-size: 38px;
+    color: #fff;
+    text-align: center;
+    line-height: 50px;
+    margin: 0;
+}
+.aboutus{
+    width: 100%;
+    max-width: 1300px;
+    justify-content: center;
+    margin: 0 auto; 
+    padding: 0 20px;
+    box-sizing: border-box; 
+    text-align: center;
+    color: #0f294d;
+    margin-top: 40px; 
+}
+.aboutus h1{
+    font-size: 48px;
+    font-weight: 700;
+    color: #0f294d;
+    line-height: 34px;
+    letter-spacing: 0;
+    margin: 24px 0 24px;
+    text-align: center;
+} 
+.aboutus p {
+    font-size: 20px;
+    color: #455873;
+    line-height: 30px;
+    padding:0 90px 20px;
+}
+.teamcontainer {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+.title h1 {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 34px;
+    letter-spacing: 0;
+    text-align: center;
+    margin: 24px 0 34px;
+}
+.team1{
+display: flex;
+flex-direction: column; 
+margin: 0 25px; 
+border-radius: 20px;
+height: 400px;
+align-items: center;
+justify-content: center;
+box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+overflow: hidden;
+}
+
+.image_team{
+display: flex;
+flex-direction: column; 
+overflow: hidden;
+height: 40%;
+align-items: center;
+width: 100%; 
+}
+.info_team {
+display: flex;
+flex-direction: column; 
+align-items: center;
+justify-content: center;
+overflow: hidden;
+height: 50%;
+width: 100%; 
+}
+
+.image_team img{
+object-fit: cover;
+width: 100%;
+height: 100%;
+}
+.info_team h1{
+color: white;
+font-size: 28px;
+font-weight: 700;
+font-family: Arial, Helvetica, sans-serif;
+line-height: 34px;
+letter-spacing: 0;
+/* text-align: center; */
+margin: 0 0 34px;
+}
+.info_team h5{
+    display: flex;
+    list-style: 25px;
+    width: 100%;
+}

@@ -1,0 +1,357 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #f13033;
+  --primary-color-dark: #c3282b;
+  --secondary-color: #f9f9f9;
+  --text-dark: #0f172a;
+  --text-light: #64748b;
+  --white: #ffffff;
+  --max-width: 1300px;
+}
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+text-decoration: none;
+list-style: none;
+scroll-behavior: smooth;
+}
+.header {
+  background-image: url("images/bc2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height: 80vh;
+  background-repeat: no-repeat;
+  margin-bottom: 30px; /* Add margin bottom to create space between header and hotel list */
+}
+
+/*book*/
+section .hotellist{
+  display: flex;
+  flex-direction:column;
+  max-width: 1200px;
+  width: 95%;
+  margin: 30px auto;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.sort{
+    display:flex;
+    width:100%;
+    height:40px;
+  justify-content:flex-end;
+}
+.sort a {
+  display: inline-block;
+  text-decoration: none;
+  background-color: var(--btn);
+  border-radius: 8px;
+  margin-left: 10px;
+  margin-right:20px;
+  color:black;
+  padding: 0 3px;
+  line-height: 35px;
+  transition: background-color 0.3s ease;
+}
+
+.sort a:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+main {
+  max-width: 1300px;
+  width: 95%;
+  margin: 30px auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.hotel-list {
+  width: 380px;
+  text-align: center;
+  height: 530px;
+  border: 2px solid lightgray;
+  margin: 20px;
+  box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hotel-list .hotel-img {
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+.hotel-list .hotel-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hotel-list .rate {
+  color: orange;
+  display: flex;
+  flex-direction: row;
+  float: inline-end;
+  margin-top: 2px;
+  justify-content: space-between;
+}
+
+.rate i {
+  display: inline-block; 
+  gap:1px;
+  margin-right:-3px;
+}
+
+.rate strong {
+  float: right;
+  margin-right: 2px;
+  margin-left: 8px;
+}
+
+.hotel-list .hotel-detail {
+  padding-left: 1em;
+  text-align: left;
+  line-height: 3em;
+  height: 25%;
+  overflow: hidden;
+}
+
+.hotel-list .hotel-detail h5,
+.hotel-list .hotel-detail h6,p {
+  font-size: 12px;
+  line-height: 1.5;
+  margin:0;
+  padding:0;
+}
+
+
+.hotel-list form button {
+  border: none;
+  border-radius: 5px;
+  padding: 1em;
+  width: 80%;
+  cursor: pointer;
+  margin-top: 1em;
+  color: white;
+  background-color: blueviolet;
+  font-weight: bold;
+  position: relative;
+}
+
+.hotel-list form button:hover {
+  background-color: blue;
+  color: white;
+}
+
+
+
+
+/* Media Queries */
+@media (min-width: 996px) {
+.section__container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 5rem 1rem;
+}
+
+.section__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 5px;
+}
+
+.header {
+  background-image: url("images/bc2.jpg");
+  background-position: center center;
+  background-size: cover;
+  height:80vh;
+  background-repeat: no-repeat;
+}
+
+.header__container {
+  padding: 3rem 1rem;
+}
+
+.header__container h1 {
+margin-bottom: 1rem;
+margin-top: 1rem;
+max-width: 1400px;
+font-size: 4rem;
+color: white;
+font-family: 'Poppins', sans-serif;
+text-align: center; /* Add this line */
+margin: 0 auto; /* Add this line to center horizontally */
+}
+
+
+.header__form {
+  padding: 2rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  width: 100%;
+  max-width: 1300px;
+  margin: auto;
+}
+
+.header__form form {
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.input__group {
+  display: flex;
+  flex-direction:column;
+  gap: 1px;
+}
+
+.input__group label {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.input__group input,
+.input__group select {
+  max-width: 100%;
+  outline: none;
+  border: none;
+  color: black;
+  font-size: 0.9rem;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.checkbtn {
+  padding: 0.75rem 1.5rem;
+  outline: none;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: var(--white);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.checkbtn:hover {
+  background-color: var(--primary-color-dark);
+}
+}
+@media screen and (max-width: 995px) {
+  .section__container {
+    width: 100%;
+    margin: auto;
+    padding: 2rem 1rem;
+  }
+  
+  .section__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2px;
+  }
+  
+  .header {
+    background-image: url("images/bc2.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+  
+  .header__container {
+    padding: 3rem 1rem;
+  }
+  
+  .header__container h1 {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    margin: 0 auto;
+  }
+  
+  
+  .header__form {
+    padding: 2rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    width: 100%;
+    margin: auto;
+  }
+  
+  .header__form form {
+    padding: 1rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    background-color: var(--white);
+    border-radius: 10px;
+  }
+  
+  .input__group {
+    display: flex;
+    flex-direction:column;
+    gap: 1px;
+  }
+  
+  .input__group label {
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--text-dark);
+  }
+  
+  .input__group input,
+  .input__group select {
+    max-width: 100%;
+    outline: none;
+    border: none;
+    color: black;
+    font-size: 0.9rem;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .checkbtn {
+    padding: 0.75rem 1.5rem;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-weight: 400;
+    white-space: nowrap;
+    color: var(--white);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .checkbtn:hover {
+    background-color: var(--primary-color-dark);
+  }
+}
+
+
+

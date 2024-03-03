@@ -1,0 +1,9 @@
+<?php
+include("navbar.php");
+include("carousel.php");
+include("trending.php");
+include("thingsto.php");
+include("destination.php");
+include("contactus.php");
+include("footer.php");
+?>
